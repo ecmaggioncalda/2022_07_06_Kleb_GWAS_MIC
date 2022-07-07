@@ -59,6 +59,9 @@ unadjusted_out <- pheno %>%
   filter(grepl("Kleb", Organism_ID)) %>%
   select(genome_id,
          all_of(phenotype_cols))
+
+log2_convert <- unadjusted_out %>%
+  mutate(across(all_of(phenotype_cols), ~log2(.x)))
   
-write_tsv(unadjusted_out,
-          file = paste0("data/pheno/", phenotype_cols, "/full.tsv"))
+write_tsv(log2_convert,
+          file = paste0("data/pheno/", phenotype_cols, "/log2.tsv"))
