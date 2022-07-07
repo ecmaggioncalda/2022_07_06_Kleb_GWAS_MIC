@@ -3,7 +3,8 @@ configfile: 'config/config.yml'
 phenotype = config['phenotype']
 tree = config['tree']
 genome = config['genome']
-hogwash = ["hogwash_synchronous", "hogwash_phyc"]
+# hogwash = ["hogwash_synchronous", "hogwash_phyc"] #use with binary data
+hogwash = ["hogwash_continuous"] #use with continuous data
 
 ncores = config['ncores']
 # ml_methods = config['ml_methods']
