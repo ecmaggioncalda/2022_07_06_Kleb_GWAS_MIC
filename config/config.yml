@@ -12,4 +12,4 @@ tree: ../2022_03_07_Kleb_Variant_analysis/2022_03_07_20_38_36_core_results/gubbi
 ncores: 20 #numeric defining the number of cores available for performing processing
 # nseeds: 10 #numeric defining the number of seeds for mikropml to run as different train/test splits
 phenotype: #list defining the phenotype(s) of interest from the metadata file
- - CHG_Status
+ - CHG_MIC
