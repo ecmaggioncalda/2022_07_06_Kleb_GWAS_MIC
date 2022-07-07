@@ -64,4 +64,4 @@ hogwash(pheno = pheno,
         tree = tree, 
         file_name = snakemake@params[["file_name"]], 
         dir = snakemake@params[["dir"]],
-        test = "both")
+        test = "continuous")

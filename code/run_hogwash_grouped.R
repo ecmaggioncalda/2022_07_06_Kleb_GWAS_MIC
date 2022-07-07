@@ -69,4 +69,4 @@ hogwash(pheno = pheno,
         dir = snakemake@params[["dir"]],
         group_genotype_key = gene_key,
         grouping_method = "post-ar",
-        test='both')
+        test='continuous')
